@@ -5,9 +5,9 @@
 
    Env vars (set in Vercel → Project → Settings → Environment Variables):
      RESEND_API_KEY      Resend API key
-     CONTACT_TO_EMAIL    where enquiries go (e.g. hello@yorkcommunitychoir.org)
+     CONTACT_TO_EMAIL    where enquiries go (e.g. hello@yorkcommunitychoir.co.uk)
      CONTACT_FROM_EMAIL  verified Resend sender, e.g.
-                         "York Community Choir <website@yorkcommunitychoir.org>"
+                         "York Community Choir <website@yorkcommunitychoir.co.uk>"
    ========================================================================== */
 
 import { Resend } from 'resend';

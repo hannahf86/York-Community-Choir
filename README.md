@@ -25,5 +25,5 @@ npm run dev
 2. Under Project → Settings → Environment Variables, add:
    - `RESEND_API_KEY`
    - `CONTACT_TO_EMAIL`: the inbox that receives enquiries (separate multiple addresses with commas)
-   - `CONTACT_FROM_EMAIL`: a sender on a domain verified in Resend, e.g. `York Community Choir <website@yorkcommunitychoir.org>`
+   - `CONTACT_FROM_EMAIL`: a sender on a domain verified in Resend, e.g. `York Community Choir <website@yorkcommunitychoir.co.uk>`
 3. In Resend, verify the sending domain by adding the DNS records it gives you.

@@ -7,7 +7,7 @@
 export const site = {
   name: 'York Community Choir',
   tagline: 'Sounding as good as we sing',
-  email: 'hello@yorkcommunitychoir.org',
+  email: 'hello@yorkcommunitychoir.co.uk', // TODO: domain not bought yet; set up this inbox once it is
   year: 2026,
 };
 
