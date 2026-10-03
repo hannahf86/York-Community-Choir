@@ -210,6 +210,7 @@ export const galleryPhotos: Photo[] = [
   { src: '/images/gallery-concert.webp', alt: 'The choir on stage in a cathedral with a full audience', caption: 'Concert night', shape: 'tall' },
   { src: '/images/gallery-sectional.webp', alt: 'Singers sharing a score during a sectional rehearsal', caption: 'Sectional rehearsal' },
   { src: '/images/gallery-pub.webp', alt: 'Choir members chatting outside a York pub after a concert', caption: 'The pub afterwards', shape: 'tall' },
+  { src: '/images/gallery-rutter-concert.webp', alt: 'The choir performing Rutter to a full church, with the conductor in the aisle', caption: 'Performing Rutter', shape: 'wide' },
 ];
 
 export const aboutVideo: { src: string | null; poster: string } = {
