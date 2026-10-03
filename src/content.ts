@@ -60,7 +60,6 @@ export const mainNav: NavItem[] = [
   { label: 'About', to: '/about' },
   { label: 'Programmes', to: '/programmes' },
   { label: "What's on", to: '/concerts' },
-  { label: 'Contact', topic: 'Something else' },
 ];
 
 export const footerNav: NavItem[] = [
