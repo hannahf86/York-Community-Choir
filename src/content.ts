@@ -64,10 +64,8 @@ export const mainNav: NavItem[] = [
 
 export const footerNav: NavItem[] = [
   { label: 'About', to: '/about' },
-  { label: 'Gallery', to: '/about#gallery' },
   { label: 'Programmes', to: '/programmes' },
   { label: features.tickets ? 'Concerts & tickets' : 'Concerts', to: '/concerts' },
-  { label: 'Join us', topic: 'Joining the choir' },
   { label: 'Safeguarding', topic: 'Safeguarding' },
   { label: 'Contact', topic: 'Something else' },
 ];
