@@ -50,6 +50,11 @@ export function Programmes() {
             {curr.repertoire && <p className="programme__rep">{curr.repertoire}</p>}
           </article>
 
+          {/* ---- Position counter (shown on mobile, between the arrows) ---- */}
+          <p className="carousel__count" aria-hidden="true">
+            {active + 1} of {count}
+          </p>
+
           {/* ---- Side card (next) ---- */}
           <SideCard p={next} label={label(next)} onSelect={() => go(1)} />
 
