@@ -20,7 +20,7 @@ export function JoinCta() {
           </p>
         </div>
         <button type="button" className="btn btn--gold" onClick={() => openContact('Joining the choir')}>
-          Tell me about joining
+          Find out more about the choir
         </button>
       </div>
     </section>
