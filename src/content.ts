@@ -7,6 +7,7 @@
 export const site = {
   name: 'York Community Choir',
   tagline: 'Sounding as good as we sing',
+  homeTitle: 'Join a Choir in York | No Auditions | York Community Choir',
   email: 'hello@yorkcommunitychoir.co.uk', // TODO: domain not bought yet; set up this inbox once it is
   year: 2026,
 };
@@ -40,12 +41,13 @@ export const features = {
 /* ---- Rehearsals ---- */
 export const rehearsals = {
   day: 'Thursdays',
-  time: '7:30–9:00pm',
+  time: '7:30–9pm',
+  doors: 'doors from 7:15',
   venue: "St Aelred's RC Church",
   address: 'Fifth Avenue, York',
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=St+Aelred's+RC+Church+Fifth+Avenue+York",
   // TODO: confirm with the choir
-  firstVisit: 'Your first rehearsal is free. No audition, no need to read music.',
+  firstVisit: 'Free. No audition, no need to read music.',
   bring: "Just yourself and a water bottle. We'll sort out your music.",
 };
 
@@ -70,12 +72,24 @@ export const footerNav: NavItem[] = [
   { label: 'Contact', topic: 'Something else' },
 ];
 
-/* ---- "More than a rehearsal night" cards ---- */
+/* ---- "Why adults across York sing with us" cards ---- */
 export const pillars = [
-  { title: 'Belonging', text: 'First rehearsals, tea breaks and the friendships between notes.' },
-  { title: 'Craft', text: 'Sectional detail, conductor insight and a piece coming together.' },
-  { title: 'Performance', text: 'Polished concerts, soloist moments and audience reactions.' },
-  { title: 'Community', text: 'Charity events, choir socials and the pub afterwards.' },
+  {
+    title: 'Belonging',
+    text: 'A buddy on your first night, a section that knows your name and friendships that carry on well past the tea break.',
+  },
+  {
+    title: 'Craft',
+    text: 'A director who picks ambitious music and helps every section get there, one bar at a time.',
+  },
+  {
+    title: 'Performance',
+    text: 'Three main concerts a year, including Christmas at York Guildhall, singing to a full house.',
+  },
+  {
+    title: 'Community',
+    text: 'Socials, summer picnics, quiz nights and the pub afterwards for anyone who fancies it.',
+  },
 ];
 
 /* ---- Programmes ----

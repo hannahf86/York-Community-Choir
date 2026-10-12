@@ -897,3 +897,18 @@
     font-size: 15px;
   }
 }
+
+/* ---- Homepage programmes: intro line under the heading ---- */
+.programmes-intro {
+  max-width: 680px;
+  font-size: clamp(17px, 1.4vw, 19px);
+  line-height: 1.6;
+  color: var(--white);
+}
+
+/* ---- Balanced line breaks for big headings (avoids stray words like "No" at a line end) ---- */
+.hero__title,
+.page-hero__title,
+.h2 {
+  text-wrap: balance;
+}

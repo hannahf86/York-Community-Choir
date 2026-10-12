@@ -1,6 +1,6 @@
 /* ==========================================================================
    HERO
-   Dark intro block ("Great singing starts with belonging.") with the two
+   Dark intro block ("Join a choir in York. No audition needed.") with the two
    primary CTAs, followed by the rehearsal photo + play button that opens
    the Rutter performance video.
    ========================================================================== */
@@ -17,15 +17,15 @@ export function Hero() {
     <section className="hero">
       {/* ---- Intro copy ---- */}
       <div className="hero__intro container">
-        <p className="eyebrow eyebrow--light">York voices · One brilliant sound</p>
-        <h1 className="hero__title">Great singing starts with belonging.</h1>
+        <p className="eyebrow eyebrow--light">Community choir · York · No auditions</p>
+        <h1 className="hero__title">Join a choir in York. No audition needed.</h1>
         <p className="hero__lead">
-          A welcoming York choir with ambitious standards, joyful rehearsals and a social life
-          worth singing about.
+          York Community Choir is for adults who love to sing, whether you’ve sung all your life or
+          not since school. Ambitious music, a warm welcome and a social life worth singing about.
         </p>
         <div className="hero__actions">
           <button type="button" className="btn btn--gold" onClick={() => openContact('Joining the choir')}>
-            Join the choir
+            Book your free first rehearsal
           </button>
           <Link to="/concerts" className="btn btn--cream">
             See our concerts

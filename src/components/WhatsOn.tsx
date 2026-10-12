@@ -15,9 +15,9 @@ export function WhatsOn() {
   return (
     <section className="section section--cream" id="whats-on">
       <div className="container whats-on">
-        {/* ---- Next performances ---- */}
+        {/* ---- Upcoming concerts ---- */}
         <div>
-          <h2 className="h2 h2--md">Next performances</h2>
+          <h2 className="h2 h2--md">Upcoming concerts in York</h2>
           {next.length > 0 ? (
             <ul className="gigs">
               {next.map((g) => (
@@ -46,8 +46,7 @@ export function WhatsOn() {
         <div>
           <h2 className="h2 h2--md">Follow the sound</h2>
           <p className="body-muted">
-            Meet the choir, watch rehearsal-to-concert stories and catch the best 15 seconds from
-            every performance.
+            Rehearsal clips, concert highlights and full recordings. See what you’d be part of.
           </p>
           <ul className="socials">
             {socialCards.map((s) => (

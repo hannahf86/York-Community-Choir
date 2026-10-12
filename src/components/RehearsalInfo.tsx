@@ -17,7 +17,7 @@ export function RehearsalInfo({ id = 'rehearsals' }: { id?: string }) {
           <div>
             <p className="eyebrow eyebrow--gold">Come along</p>
             <h2 id={`${id}-title`} className="h2 h2--md h2--light">
-              Rehearsals every Thursday
+              Choir rehearsals in York, every Thursday
             </h2>
           </div>
           <button type="button" className="btn btn--gold" onClick={() => openContact('Joining the choir')}>
@@ -29,7 +29,7 @@ export function RehearsalInfo({ id = 'rehearsals' }: { id?: string }) {
           <div className="rehearsal-info__item">
             <dt>When</dt>
             <dd>
-              {rehearsals.day}, {rehearsals.time}
+              {rehearsals.day}, {rehearsals.time} ({rehearsals.doors})
             </dd>
           </div>
           <div className="rehearsal-info__item">

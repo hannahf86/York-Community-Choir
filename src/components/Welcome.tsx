@@ -22,14 +22,15 @@ export function Welcome() {
           <p className="eyebrow">Everyone has a first rehearsal</p>
           <h2 className="h2">Come for the music. Stay for the people.</h2>
           <p className="body-muted">
-            No awkward auditions. No need to know anyone. We'll pair you with a friendly choir
-            buddy, help you find your voice part and make sure the kettle is on.
+            You don’t need to audition, read music or know anyone. On your first Thursday we’ll pair
+            you with a choir buddy from your section, help you find your voice part and make sure the
+            kettle’s on.
           </p>
           <blockquote className="pull-quote">
-            "By the tea break, I already felt like I belonged." <cite>- Hannah, alto</cite>
+            “By the tea break, I already felt like I belonged.” <cite>– Hannah, alto</cite>
           </blockquote>
           <Link to="/about" className="btn btn--gold">
-            Find out more about life in the choir
+            See what choir life is like
           </Link>
         </div>
       </div>

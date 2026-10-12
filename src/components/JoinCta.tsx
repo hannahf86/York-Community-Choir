@@ -15,12 +15,13 @@ export function JoinCta() {
         <div>
           <h2 className="h2 h2--lg h2--light">Your voice belongs here.</h2>
           <p className="join-cta__text">
-            New members are welcome throughout the year. {rehearsals.day}, {rehearsals.time}, at{' '}
-            {rehearsals.venue}. Your first rehearsal is free.
+            Looking for somewhere to start singing in York? New members are welcome all year, and
+            September and January are the easiest times to join. {rehearsals.day}, {rehearsals.time}{' '}
+            at St Aelred’s, Fifth Avenue. Your first rehearsal is free.
           </p>
         </div>
         <button type="button" className="btn btn--gold" onClick={() => openContact('Joining the choir')}>
-          Find out more about the choir
+          Book your free first rehearsal
         </button>
       </div>
     </section>

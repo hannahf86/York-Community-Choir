@@ -33,6 +33,10 @@ export function Programmes() {
       <div className="container">
         <p className="eyebrow eyebrow--light">What we're singing</p>
         <h2 className="h2 h2--lg h2--light">Programmes with heart and ambition</h2>
+        <p className="programmes-intro">
+          Each term we build a programme around a theme. This term it’s Whitacre, Rutter, Gjeilo and
+          folk songs arranged just for us.
+        </p>
 
         <div className="carousel" aria-roledescription="carousel" aria-label="Programmes">
           {/* ---- Previous arrow ---- */}

@@ -51,7 +51,7 @@ export function ChoirLife() {
           <div className="gallery__card">
             <p className="eyebrow eyebrow--gold">Behind the scenes</p>
             <h3 className="gallery__card-title">Rehearsals, tea breaks and the moments between notes.</h3>
-            <p className="body-muted body-muted--sm">A glimpse into the warmth and camaraderie of choir life.</p>
+            <p className="body-muted body-muted--sm">Take a look at what a year in York Community Choir actually looks like.</p>
             <Link to="/about" className="btn btn--gold gallery__card-btn">
               Read more about life in the choir
             </Link>
