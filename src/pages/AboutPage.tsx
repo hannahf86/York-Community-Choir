@@ -13,14 +13,18 @@ import { RehearsalInfo } from '../components/RehearsalInfo';
 import { PhotoGallery } from '../components/PhotoGallery';
 
 export function AboutPage() {
-  usePageTitle('Life in the choir');
+  usePageTitle('A Choir for Adults in York | About York Community Choir', {
+    exact: true,
+    description:
+      "Find out what it's like to sing with York Community Choir: a typical Thursday rehearsal, our concerts, the choir year and answers to the questions new singers ask.",
+  });
 
   return (
     <>
       {/* ---- Hero + video ---- */}
       <PageHero
         eyebrow="About the choir"
-        title="Life in the choir"
+        title="A friendly choir for adults in York"
         lead="Ambitious music, a warm welcome and a lot of tea. Here's what being part of York Community Choir is really like."
       >
         <AboutVideo />
@@ -42,7 +46,7 @@ export function AboutPage() {
       <section className="section section--dark" aria-labelledby="evening-title">
         <div className="container">
           <p className="eyebrow eyebrow--light">Thursday nights</p>
-          <h2 id="evening-title" className="h2 h2--md h2--light">A typical rehearsal</h2>
+          <h2 id="evening-title" className="h2 h2--md h2--light">What happens at a Thursday rehearsal</h2>
           <ol className="evening">
             {typicalEvening.map((step) => (
               <li key={step.time} className="evening__step">
@@ -58,8 +62,8 @@ export function AboutPage() {
       {/* ---- What it's like (words) ---- */}
       <section className="section section--light" aria-labelledby="life-title">
         <div className="container">
-          <p className="eyebrow">In our members' words</p>
-          <h2 id="life-title" className="h2 h2--md">What it's like</h2>
+          <p className="eyebrow">Life in the choir</p>
+          <h2 id="life-title" className="h2 h2--md">What it's like to join</h2>
           <div className="life-grid">
             {lifeInChoir.map((item) => (
               <article key={item.title} className="life-card">
@@ -107,10 +111,10 @@ export function AboutPage() {
       {/* ---- Member stories ---- */}
       <section className="section section--cream" id="stories" aria-labelledby="stories-title">
         <div className="container">
-          <p className="eyebrow">Stories</p>
+          <p className="eyebrow">In our members' words</p>
           <h2 id="stories-title" className="h2 h2--md">Why our members sing</h2>
           <ul className="stories">
-            {memberStories.map((s, i) => (
+            {memberStories.filter((s) => !s.draft).map((s, i) => (
               <li key={i} className="story">
                 <blockquote className="story__quote">"{s.quote}"</blockquote>
                 <p className="story__who">

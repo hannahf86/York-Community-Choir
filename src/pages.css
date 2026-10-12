@@ -912,3 +912,18 @@
 .h2 {
   text-wrap: balance;
 }
+
+/* ---- About stories: when only one quote is published, show it as a featured pull quote ---- */
+.stories:has(> .story:only-child) {
+  grid-template-columns: minmax(0, 860px);
+}
+.story:only-child {
+  padding: clamp(28px, 4vw, 44px);
+}
+.story:only-child .story__quote {
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.3;
+}
+.story:only-child .story__who {
+  font-size: 16px;
+}

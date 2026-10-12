@@ -233,14 +233,14 @@ export const aboutVideo: { src: string | null; poster: string } = {
 };
 
 export const aboutIntro = [
-  "York Community Choir is a non-auditioned choir of singers from all over the city. Some of us have sung all our lives. Some of us hadn't sung since school. We rehearse every Thursday, perform three main concerts a year, and spend a fair amount of time in the pub afterwards.",
-  'We take the music seriously but never ourselves. Our director chooses ambitious repertoire, from Whitacre and Rutter to folk arrangements written just for us, and then helps every section get there one bar at a time.',
+  "York Community Choir is a non-auditioned choir for singers aged 16 and over, from all over the city. Some of us have sung all our lives. Some of us hadn't sung since school. We rehearse every Thursday at St Aelred's on Fifth Avenue, perform three main concerts a year, and spend a fair amount of time in the pub afterwards.",
+  "We take the music seriously, but never ourselves. Our director chooses ambitious repertoire, from Whitacre and Rutter to folk songs arranged just for us, then helps every section get there one bar at a time. If you've been looking for somewhere to start singing in York, this is it.",
 ];
 
 export const lifeInChoir = [
   {
     title: 'Your first evening',
-    text: "You'll be met at the door, introduced to a choir buddy from your voice part and handed a folder of music. Nobody expects you to know anything yet. Sit next to your buddy, follow along and enjoy it.",
+    text: "You'll be met at the door, introduced to a choir buddy from your voice part and handed a folder of music. Nobody expects you to know anything yet. Sit with your buddy, follow along and enjoy it.",
   },
   {
     title: 'How rehearsals feel',
@@ -248,37 +248,37 @@ export const lifeInChoir = [
   },
   {
     title: 'Concert season',
-    text: 'In the weeks before a concert we add an extra rehearsal and a run-through in the venue. On the night, there are black outfits, nerves, a full house and an incredible feeling when it all comes together.',
+    text: 'In the weeks before a concert we add an extra rehearsal and a run-through in the venue. On the night there are black outfits, nerves, a full house and a brilliant feeling when it all comes together.',
   },
   {
     title: 'The after-party',
-    text: "Once the last note has rung out and the chairs are stacked, we celebrate. After every concert there's a little party for the choir, with drinks, food and plenty of reliving the best bits.",
+    text: 'Once the last note has rung out and the chairs are stacked, we celebrate with drinks, food and plenty of reliving the best bits.',
   },
   {
     title: 'Beyond the music',
-    text: 'Summer picnics, quiz nights and a lot of tea. Many of our members say the friendships are the best part.',
+    text: 'Summer picnics, quiz nights and a lot of tea. Many members say the friendships are the best part.',
   },
   {
     title: 'Staying in touch',
-    text: "Once you've joined, we'll add you to the choir WhatsApp groups. There's one for the whole choir with notices and social plans, and one for your section where you can share practice tracks and ask questions between rehearsals.",
+    text: "After your first few rehearsals we'll add you to the choir WhatsApp groups. There's one for the whole choir with notices and socials, and one for your section with practice tracks and questions between rehearsals.",
   },
 ];
 
 export const typicalEvening = [
-  { time: '7:15pm', title: 'Arrive & say hello', text: 'Grab your music and find your section.' },
+  { time: '7:15pm', title: 'Arrive and say hello', text: 'Pick up your music and find your section.' },
   { time: '7:30pm', title: 'Warm-up', text: 'Breathing, stretching and a few silly noises.' },
   { time: '7:45pm', title: 'Rehearsal', text: "Full choir and section work on this term's pieces." },
   { time: '8:15pm', title: 'Tea break', text: 'Tea, biscuits and notices. The kettle is always on.' },
-  { time: '8:30pm', title: 'Second half', text: 'Putting it together and singing it through.' },
+  { time: '8:30pm', title: 'Second half', text: 'Putting it all together and singing it through.' },
   { time: '9:00pm', title: 'Finish', text: 'Home, or the pub for anyone who fancies it.' },
 ];
 
 export const choirYear: { when: string; title: string; text: string; link?: { label: string; to: string } }[] = [
-  { when: 'September', title: 'Autumn term begins', text: 'New repertoire, and the best time to join as we prepare for Christmas.' },
+  { when: 'September', title: 'Autumn term begins', text: 'New music, and the best time to join as we prepare for Christmas.' },
   {
     when: 'December',
     title: 'Christmas concert',
-    text: 'Our biggest night of the year: Christmas at the Guildhall.',
+    text: 'Our biggest night of the year: Christmas at York Guildhall.',
     link: { label: 'See dates & tickets', to: '/concerts' },
   },
   { when: 'January', title: 'Spring term begins', text: 'New members welcome again as we start fresh pieces.' },
@@ -287,20 +287,37 @@ export const choirYear: { when: string; title: string; text: string; link?: { la
   { when: 'August', title: 'Summer break', text: 'A well-earned rest before it all starts again.' },
 ];
 
-export const memberStories = [
+/* `draft: true` stories are hidden on the site until they're filled in,
+   so placeholder quotes never get published. */
+export const memberStories: { quote: string; name: string; part: string; draft?: boolean }[] = [
   { quote: 'By the tea break, I already felt like I belonged.', name: 'Hannah', part: 'Alto' },
-  { quote: "I hadn't sung since school. Two years later I'm singing Whitacre to a full house.", name: 'Placeholder name', part: 'Tenor' },
-  { quote: 'I moved to York knowing nobody. Now half my friends are basses.', name: 'Placeholder name', part: 'Bass' },
+  // TODO: real member quote and name (hidden until done)
+  { quote: 'TODO: real member quote', name: 'TODO: name', part: 'Tenor', draft: true },
+  // TODO: real member quote and name (hidden until done)
+  { quote: 'TODO: real member quote', name: 'TODO: name', part: 'Bass', draft: true },
 ];
 
 export const faqs = [
-  { q: 'Do I need to audition?', a: 'No. Everyone is welcome. We help you find the voice part that suits you.' },
-  { q: 'Do I need to read music?', a: "Not at all. Many members don't. We provide learning tracks so you can practise at home." },
-  { q: 'Can I join partway through a term?', a: 'Yes, you can join at any point. September and January are the easiest times to start, because that is when we begin new music.' },
-  { q: 'How much does it cost?', a: 'Your first rehearsal is free. After that there is a termly membership fee. Get in touch for the current rate and concessions.' },
+  { q: 'Who can join?', a: "Anyone aged 16 or over who loves to sing. You don't need any experience." },
+  { q: 'Do I need to audition?', a: "No. Everyone is welcome, and we'll help you find the voice part that suits you." },
+  { q: 'Do I need to read music?', a: "Not at all. Plenty of members don't. We provide learning tracks so you can practise at home." },
+  {
+    q: 'What kind of music do you sing?',
+    a: 'A mix of modern choral music (Whitacre, Rutter, Gjeilo), seasonal favourites and folk songs arranged specially for us. Each term has its own theme.',
+  },
+  { q: 'Where and when do you rehearse?', a: "Thursdays, 7:30–9pm, at St Aelred's RC Church on Fifth Avenue, York." },
+  {
+    q: 'Can I join partway through a term?',
+    a: "Yes, at any point. September and January are the easiest times, because that's when we start new music.",
+  },
+  // TODO: confirm the membership fee (around £80 a term) before launch
+  {
+    q: 'How much does it cost?',
+    a: 'Your first rehearsal is free. After that, membership is around £80 a term, with concessions available.',
+  },
   { q: 'Do I have to sing in the concerts?', a: "We'd love you to, but it's never compulsory." },
   {
     q: "How will I know what's going on?",
-    a: "Through our WhatsApp groups. There's a whole-choir group for notices, rehearsal changes and socials, plus a group for your section. We'll add you after your first few rehearsals.",
+    a: "Through our WhatsApp groups: one for the whole choir and one for your section. We'll add you after your first few rehearsals.",
   },
 ];
